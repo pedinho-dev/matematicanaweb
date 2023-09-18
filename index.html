@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="style/index.css">
+		<title>Matemática Web</title>
+		<script type="text/javascript" src="script/app.js" defer></script>
+	</head>
+	<body>
+		<header class="header">
+			<div class="header__container">
+				<h2 class="header__name">Olá, João!</h2>
+				<nav class="header__navigation">
+					<button class="header__menu">
+						<svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path fill="#fff" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M80 160h352M80 256h352M80 352h352"/></svg>
+					</button>
+				</nav>
+			</div>
+			<div class="header__circle">
+				<ion-icon name="star" class="header__star"></ion-icon>
+	            <div class="circular-progress">
+	                <span class="progress-value">0</span>
+	            </div>
+	            <ion-icon name="star" class="header__star"></ion-icon>
+	            <span class="text">Nível</span>
+        	</div>
+		</header>
+		<main class="mainContainer">
+			<div class="mainContainer__buttons">
+				<label for="mainContainer__btnEasy" class="label-container">
+					<div class="mainContainer__circle">
+						<input id="mainContainer__btnEasy" type="checkbox" name="facil" checked="checked">
+						<div class="cicle__checked"></div>
+					</div>
+					<span class="check-test">Fácil</span>
+				</label>
+				<label for="mainContainer__btnHard" class="label-container">
+					<div class="mainContainer__circle">
+						<input id="mainContainer__btnHard" type="checkbox" name="dificil">
+						<div class="cicle__checked"></div>
+					</div>
+					<span class="check-test">Difícil</span>
+				</label>
+			</div>
+			<span class="easy-emoji">😀</span>
+			<span class="hard-emoji">😈</span>
+			<div class="mainContainer__multiplication">
+				<h2 class="mainContainer__title-exercise">Multiplicação</h2>
+				<div class="mainContainer__calculation">
+					<input type="text" name="response" class="mainContainer__inputResponse" placeholder="Digite a resposta">
+					<div class="mainContainer__numbers">
+						<p class="mainContainer__dynamicNumber">...</p>
+						<span class="space-x">X</span>
+						<p class="mainContainer__dynamicNumberSecond">...</p>
+					</div>
+					<button class="mainContainer__submitResponse">responder</button>
+				</div>
+			</div>
+		</main>
+		<section class="section-score">
+			<div class="section-score__hits">
+				<span class="section-score__hits__text">acertos</span>
+				<span class="section-score__hits__nubem">0</span>
+			</div>
+			<img src="images/icons/brain-icon.png" class="section-score__brain-icon">
+			<div class="section-score__err">
+				<span class="section-score__err__text">erros</span>
+				<span class="section-score__err__nubem">0</span>
+			</div>
+		</section>
+		<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+		<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+	</body>
+</html>
